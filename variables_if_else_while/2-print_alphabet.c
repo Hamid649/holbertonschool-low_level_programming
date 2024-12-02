@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - This is the entry point of the code
  *
@@ -7,12 +6,14 @@
  */
 int main(void)
 {
-    char c;
+	int i = 0;
 
-    for (c = 'a'; c <= 'z'; c++)
-        putchar(c);
-    putchar('\n');
+	while (i < 26)
+	{
+		putchar('a' + i);
+		i++;
+	}
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
-
